@@ -35,12 +35,12 @@ export default function Landing() {
 
   return (
     <>
-      <header className="h-20 bg-white shadow items-center justify-center w-[1462px] fixed z-10">
+      <header className="h-20 flex top-0 bg-white shadow items-center justify-center fixed z-10 w-full">
         <nav
-          className="flex gap-x-32 lg:justify-center sm:justify-start items-center p-6"
+          className="flex gap-x-32 justify-between items-center p-6 container mx-auto"
           aria-label="Global"
         >
-          <div className="flex  w-auto">
+          <div className="flex w-auto">
             <Link href="/" className="flex items-center">
               <Image alt="logo" src="/logo.png" width={38} height={38} />
               <Image
@@ -55,7 +55,7 @@ export default function Landing() {
           <div className="flex lg:hidden">
             <button
               type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+              className="-m-2.5 inline-flex items-center justify-end rounded-md p-2.5 text-gray-700"
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
@@ -64,7 +64,7 @@ export default function Landing() {
           </div>
           <Popover.Group className="hidden justify-center item-center lg:flex lg:gap-x-12">
             <Popover className="relative">
-              <Popover.Button className="flex focus:outline-none items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
+              <Popover.Button className="flex focus:outline-none items-center gap-x-2 text-sm font-semibold leading-6 text-gray-900">
                 Use Cases
                 <ChevronDownIcon
                   className="h-5 w-5 flex-none text-gray-400"
@@ -86,7 +86,7 @@ export default function Landing() {
                     {products.map((item) => (
                       <div
                         key={item.name}
-                        className="group relative flex items-center gap-x-4 rounded-lg p-2 text-sm leading-4 hover:bg-gray-50"
+                        className="group relative flex items-center gap-x-4 rounded-lg p-4 text-sm leading-4 hover:bg-gray-50"
                       >
                         <div className="flex-auto">
                           <a
