@@ -4,8 +4,8 @@ import { Button } from "./ui/button";
 
 const Landing = () => {
   return (
-    <div className="max-h-screen w-full p-10 relative bg-white grid justify-center lg:justify-center container my-16 lg:flex ">
-      <section className="flex flex-col items-center justify-center lg:justify-center p-16 gap-6">
+    <div className="max-h-screen p-10 relative bg-white grid justify-center my-16 lg:flex w-full lg:md:justify-center items-center lg:md:items-center">
+      <section className="flex flex-col items-center justify-center lg:justify-center p-16 gap-4">
         <p className="truncate  text-blue-950 text-[32px] font-semibold md:text-[45px] md:font-bold lg:text-[50px] lg:font-extrabold">
           The simple way to track <br />
           productivity, save time <br />
@@ -29,8 +29,8 @@ const Landing = () => {
       <Image
         className="hidden md:hidden lg:flex items-center justify-center  max-h-[89vh]"
         src="/lap.svg"
-        width={852.5}
-        height={474.5}
+        width={800}
+        height={450}
         alt="macbook"
       />
     </div>

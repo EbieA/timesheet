@@ -8,15 +8,15 @@ import Demo from "@/components/Demo";
 
 export default function Home() {
   return (
-    <main className="w-full">
+    <main>
       <Navbar />
-      <div>
+      <div className="justify-center flex flex-col 2xl:xl:lg:md:sm:w-screen px-10">
         <Landing />
         <Features />
         <Sample />
-        {/* <Faq /> */}
-        {/* <Demo /> */}
-        {/* <Footer /> */}
+        <Faq />
+        <Demo />
+        <Footer />
       </div>
     </main>
   );

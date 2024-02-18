@@ -12,18 +12,20 @@ const Faq = () => {
   };
 
   return (
-    <div className="w-[1440px] h-[1342px] top-[550px] justify-center items-center relative">
-      <div className="w-full h-14 text-center text-blue-950 text-[44px] font-['Nunito'] leading-[48px]">
-        FAQs
+    <div className="w-full h-[1342px] p-10 flex flex-col justify-center items-center relative">
+      <div className="flex flex-col">
+        <div className="w-full h-14 text-center text-blue-950 text-[44px] leading-[48px]">
+          FAQs
+        </div>
+        <div className="w-full h-10 text-center text-teal-500 text:xs lg:md:text-sm font-bold leading-[48px]">
+          FREQUENTLY ASKED QUESTIONS
+        </div>
       </div>
-      <div className="w-full h-10 text-center text-teal-500 text-sm font-bold font-['Nunito'] leading-[48px]">
-        FREQUENTLY ASKED QUESTIONS
-      </div>
-      <div className="w-[500px] h-[132px] left-[287px] top-[115px] absolute">
+      <div className="w-full flex flex-col lg:md:justify-center lg:md:items-center">
         {FAQData.map((item, index) => (
           <div
             key={index}
-            className={`w-[896px] mb-6 bg-white rounded-lg shadow p-4 justify-center items-center pl-6 pr-4 ${
+            className={`w-auto lg:w-[896px] mb-6 bg-white rounded-lg shadow p-4 justify-center items-center pl-6 pr-4 ${
               activeAccordion === index
                 ? "border-solid border-2 border-teal-500 shadow"
                 : ""
@@ -35,7 +37,7 @@ const Faq = () => {
               }`}
               onClick={() => toggleAccordion(index)}
             >
-              <div className="text-sky-900 text-lg font-['Nunito'] leading-[30px]">
+              <div className="text-sky-900 text-lg leading-[30px]">
                 {item.question}
               </div>
 
@@ -74,7 +76,7 @@ const Faq = () => {
               </div>
             </div>
             {activeAccordion === index && (
-              <div className="text-slate-500 text-lg font-normal font-['Nunito'] leading-[30px] fade-in">
+              <div className="text-slate-500 text-lg font-normal leading-[30px] fade-in">
                 {item.answer}
               </div>
             )}

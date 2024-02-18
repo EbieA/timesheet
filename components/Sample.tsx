@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import { Button } from "./ui/button";
 
 const Sample = () => {
   return (
     <>
-      <div className="hidden w-full ld:md:w-full ld:md:h-[1047px] ld:md:justify-center ld:md:items-center container overflow-hidden lg:md:inline-flex">
-        <div className="w-[1440px] h-[1047px] relative flex-col justify-start items-start flex bg-white">
+      <div className="hidden w-full lg:md:h-full  lg:md:justify-center lg:md:items-center lg:md:grid">
+        <div className="w-auto h-[1047px] relative justify-start items-start grid bg-white">
           <div className="w-[1440px] px-[628px] bg-blue-950 rounded-bl-[1833px] rounded-br-[1833px] overflow-hidden justify-center items-center inline-flex">
             <div className="grow shrink basis-0 self-stretch px-4 pt-[84px] flex-col justify-end items-center gap-[84px] inline-flex">
               <div className="w-[860px] h-24 pl-[64.56px] pr-[64.38px] justify-center items-center inline-flex">
@@ -104,17 +105,15 @@ const Sample = () => {
             </div>
           </div>
         </div>
-        <div className="w-[1440px] h-[361px] top-[2900px] ">
-          <div className="w-[1440px] h-[361px]  bg-neutral-100" />
-          <div className="w-[969px] h-[124px] text-center text-blue-950 text-[44px] font-bold  leading-[48px]">
+        <div className="w-[1440px] h-[361px] py-12 p-20 flex flex-col lg:md:items-center z-10 lg:md:justify-center bg-neutral-100">
+          <div className="w-[969px] h-[124px] text-center text-blue-950 text-[44px] font-bold leading-[48px]">
             TIMBA is the right tool to help you increase your productivity and
             profit.
           </div>
-          <div className="w-[354px] h-[66.23px] ">
-            <div className="w-[354px] h-[66.23px] bg-teal-500 rounded-lg" />
-            <div className="w-[310.34px] h-[27.08px] text-center text-white text-lg font-bold leading-normal">
+          <div className="mb-8 ">
+            <Button className="py-3 px-8 text-center text-white text-lg font-bold bg-teal-500 rounded-lg">
               Start Using TIMBA Today
-            </div>
+            </Button>
           </div>
           <div className="w-[402px] h-6 text-center text-stone-500 text-sm font-normal">
             Sign up for FREE trial - No credit card required

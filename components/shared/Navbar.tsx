@@ -35,7 +35,7 @@ export default function Landing() {
 
   return (
     <>
-      <header className="h-20 flex top-0 bg-white shadow items-center justify-center fixed z-10 w-full">
+      <header className="h-20 flex top-0 bg-white shadow items-center justify-center fixed z-30 w-full">
         <nav
           className="flex gap-x-32 justify-between items-center p-6 container mx-auto"
           aria-label="Global"
