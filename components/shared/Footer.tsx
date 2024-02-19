@@ -29,7 +29,12 @@ const Footer = () => {
         <div className="h-full flex flex-col gap-4">
           <div className=" text-blue-950 text-2xl font-bold ">Sections</div>
           <div className=" text-blue-950 text-base font-medium ">Home</div>
-          <div className=" text-blue-950 text-base font-medium ">Pricing</div>
+          <Link
+            href="/pricing"
+            className=" text-blue-950 text-base font-medium "
+          >
+            Pricing
+          </Link>
           <div className=" text-blue-950 text-base font-medium ">
             Book A Demo
           </div>
