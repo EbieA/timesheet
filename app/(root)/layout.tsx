@@ -4,10 +4,10 @@ import Footer from "@/components/shared/Footer";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <main className="background-light850_dark100 relative">
+    <main className="">
       <Navbar />
       <section className="">
-        <div className="mx-auto w-full max-w-5xl">{children}</div>
+        <div className="">{children}</div>
       </section>
       <Footer />
     </main>
