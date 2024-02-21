@@ -74,6 +74,9 @@ const Plans = () => {
         <div className="grow justify-center px-0.5 text-base font-light leading-6 text-center whitespace-nowrap text-slate-500">
           Annual Billing
         </div>
+        <div className="text-emerald-700 text-xs font-bold font-['Public Sans'] uppercase leading-[18px]">
+          25% OFF
+        </div>
       </div>
       <div className="flex gap-5 max-md:gap-4 ">
         <div className="flex w-full max-md:ml-0 max-md:w-full gap-2">
@@ -101,13 +104,13 @@ const Plans = () => {
                   /month, billed annually
                 </div>
                 {selectedPlanId === plan.id ? (
-                  <Button className="text-center text-white font-bold justify-center items-center  px-16 py-4 mt-10 flex bg-slate-600 rounded-xl max-md:px-5 border-[3px]">
+                  <Button className="text-center h-14 text-white font-bold justify-center items-center  px-16 py-4 mt-10 flex bg-slate-600 rounded-xl max-md:px-5 border-[3px]">
                     Get Started
                   </Button>
                 ) : (
                   <Button
                     onClick={() => handleGetStartedClick(plan.id)}
-                    className="justify-center items-center flex font-bold text-center bg-white rounded-xl px-16 py-4 mt-10 border-solid border-[3px] border-slate-600 text-slate-600 max-md:px-5"
+                    className="justify-center h-14 items-center flex font-bold text-center bg-white rounded-xl px-16 py-4 mt-10 border-solid border-[3px] border-slate-600 text-slate-600 max-md:px-5"
                   >
                     Get Started
                   </Button>
