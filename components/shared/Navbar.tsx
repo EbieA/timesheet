@@ -10,19 +10,19 @@ import { Button } from "../ui/button";
 const products = [
   {
     name: "Sub Contractor",
-    href: "#",
+    href: "/subcontractor",
   },
   {
     name: "HR Management",
-    href: "#",
+    href: "/human-resources",
   },
   {
-    name: "Enterpreneur",
-    href: "#",
+    name: "Entrepreneur",
+    href: "/entrepreneur",
   },
   {
     name: "Recruiters",
-    href: "#",
+    href: "/recruiters",
   },
 ];
 
@@ -117,7 +117,7 @@ export default function Landing() {
               Blog
             </a>
             <a
-              href="#"
+              href="/demo"
               className="text-sm font-semibold leading-6 text-gray-900"
             >
               Book a Demo
